@@ -2,7 +2,7 @@
 # Maintainer: Felix Xing <fxing@qnx.com>
 pkgname=yaml
 pkgver=0.2.5
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="YAML 1.1 parser and emitter written in C"
 url="https://pyyaml.org/wiki/LibYAML"
 arch="all"
@@ -35,7 +35,6 @@ package() {
     make DESTDIR="$pkgdir" install
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 dadd7d8e0d88b5ebab005e5d521d56d541580198aa497370966b98c904586e642a1cd4f3881094eb57624f218d50db77417bbfd0ffdce50340f011e35e8c4c02  yaml-0.2.5.tar.gz
 "
